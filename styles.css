@@ -1,9 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
-@import url('font/Norse-Bold.otf');
+@font-face {
+    font-family: "Norse-Bold";
+    src: url("font/Norse-Bold.otf");
+}
 
 :root {
     box-sizing: border-box;
     font-family: 'Patrick Hand', cursive, sans-serif;
+    font-size: 24px;
+    padding: 0;
+    margin: 0;
+
+    --left: 25vw;
+    --right: calc(100vw - var(--left))
 }
 
 body {
@@ -22,3 +31,52 @@ body {
     display: flex;
 }
 
+/* Left side styles - START */
+.left {
+    position: relative;
+    width: var(--left);
+    height: 100vh;
+}
+
+.logo {
+    padding: 20px 50px 20px 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: "Norse-Bold";
+    font-size: 100px;
+    color: white;
+
+    position: absolute;
+    top: 150px;
+}
+
+.logo > img {
+    width: 100px;
+    height: auto;
+}
+
+.credit {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+
+    position: absolute;
+    bottom: 20px;
+}
+
+.credit > p {
+    font-size: 16px;
+    color: white;
+    
+}
+
+.credit > p > a {
+    color: white;
+}
+/* Left side styles - END */
