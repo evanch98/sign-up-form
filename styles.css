@@ -7,12 +7,12 @@
 :root {
     box-sizing: border-box;
     font-family: 'Patrick Hand', cursive, sans-serif;
-    font-size: 24px;
+    color: #E43F5A;
     padding: 0;
     margin: 0;
 
     --left: 25vw;
-    --right: calc(100vw - var(--left))
+    --right: 75vw;
 }
 
 body {
@@ -39,7 +39,7 @@ body {
 }
 
 .logo {
-    padding: 20px 50px 20px 0;
+    padding: 20px 0 20px 0;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.3);
 
@@ -53,6 +53,7 @@ body {
 
     position: absolute;
     top: 150px;
+    left: 0px;
 }
 
 .logo > img {
@@ -80,3 +81,65 @@ body {
     color: white;
 }
 /* Left side styles - END */
+
+/* Right side styles - START */
+.right {
+    width: var(--right);
+
+    background-color: #1B1B2F;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 50px 50px 20px 0px;
+}
+
+.intro {
+    font-size: 28px;
+    padding-left: 50px;
+}
+
+.intro > p {
+    padding: 0;
+    margin: 0;
+}
+
+.form-container {
+    width: 100%;
+
+    margin-top: 50px;
+    padding: 0px 0px 20px 50px;
+    background-color: #1F4068;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container .row {
+    display: flex;
+    justify-content: flex-start;
+    gap: 5rem;
+}
+
+.form-container .column {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 22px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"] {
+    width: 300px;
+    height: 2em;
+    border-radius: 5px;
+    background: none;
+    border-color: rgba(0, 0, 0, 0.2);
+}
+/* Right side styles - END */
